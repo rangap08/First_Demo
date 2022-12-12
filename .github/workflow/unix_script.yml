@@ -1,0 +1,14 @@
+name: Run Shell script
+on:
+    
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: devops_dev
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: check the date
+        run: 
+            echo $date
